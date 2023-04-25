@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/jetstack/cert-manager/test/acme/dns"
 	"os"
 	"testing"
 	"time"
+
+	"github.com/cert-manager/cert-manager/test/acme/dns"
 )
 
 var (

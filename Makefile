@@ -12,7 +12,7 @@ clean:
 	rm -Rf $(OUT)/kubebuilder
 
 install-tools:
-	sh ./scripts/fetch-test-binaries.sh
+	/bin/bash ./scripts/fetch-test-binaries.sh
 
 verify: clean install-tools
 	go test -v .
@@ -28,6 +28,7 @@ compile:
 	go mod vendor
 	echo "### Compile the webhook ..."
 	CGO_ENABLED=0 go build -o webhook -ldflags '-w -extldflags "-static"' .
+
 
 .PHONY: rendered-manifest.yaml
 rendered-manifest.yaml:

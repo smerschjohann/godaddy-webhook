@@ -2,8 +2,8 @@
 
 set -e
 
-k8s_version=1.22.1
-goarch=amd64
+k8s_version=1.25.0
+goarch=arm64
 goos="unknown"
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then

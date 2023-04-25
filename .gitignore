@@ -8,5 +8,6 @@ webhook
 
 # Ignore the built binary
 cert-manager-webhook-godaddy
+godaddy-webhook
 /vendor/
 /testdata/godaddy/secret.yaml
