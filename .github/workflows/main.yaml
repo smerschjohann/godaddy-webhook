@@ -1,3 +1,6 @@
+permissions:
+  packages: write
+
 on:
   pull_request:
     branches: [ main ]
@@ -5,7 +8,7 @@ on:
     branches:
       - main
 jobs:
-  e2e_test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-go@v4
