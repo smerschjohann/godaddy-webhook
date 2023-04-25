@@ -20,4 +20,4 @@ jobs:
 
       - uses: ko-build/setup-ko@v0.6
 
-      - run: ko build --platform=linux/amd64,linux/arm64
+      - run: ko build --platform=linux/amd64,linux/arm64 --bare
